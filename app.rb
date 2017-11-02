@@ -9,6 +9,11 @@ get '/sleep320' do
   "hello\n"
 end
 
+get '/sleep100' do
+  sleep 100
+  "hello\n"
+end
+
 get "/env" do
   "#{ request.env }"
 end
