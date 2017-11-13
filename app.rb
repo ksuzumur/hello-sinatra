@@ -14,6 +14,11 @@ get '/sleep100' do
   "hello\n"
 end
 
+get '/healthz' do
+   Socket.gethostbyname(Socket.gethostname).first 
+end
+
+
 get "/env" do
   "#{ request.env }"
 end
