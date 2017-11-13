@@ -15,7 +15,7 @@ get '/sleep100' do
 end
 
 get '/healthz' do
-   Socket.gethostbyname(Socket.gethostname).first 
+   Socket.gethostbyname(Socket.gethostname).first  + "\n"
 end
 
 
