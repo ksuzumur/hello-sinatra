@@ -1,7 +1,7 @@
 require 'sinatra'
 
 get '/' do
-  "hello\n"
+  "hello!\n"
 end
 
 get '/sleep320' do
